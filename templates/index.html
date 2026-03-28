@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏥 Patient Classifier</h1>
+
+    <input id="temp" placeholder="Temperature">
+    <input id="oxygen" placeholder="Oxygen">
+    <input id="bp" placeholder="Blood Pressure">
+    <input id="comfort" placeholder="Comfort">
+
+    <button onclick="predict()">Classify</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
